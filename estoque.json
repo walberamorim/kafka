@@ -1,0 +1,22 @@
+{
+    "ebooks": [
+        {
+            "id": 1,
+            "titulo": "Building Microservices",
+            "quantidade_autorizada": 30,
+            "preco": 15.00
+        },
+        {
+            "id": 2,
+            "titulo": "Developing Microservices with Node.js",
+            "quantidade_autorizada": 20,
+            "preco": 20.00
+        },
+        {
+            "id": 3,
+            "titulo": "Rest API - Design Rule Book",
+            "quantidade_autorizada": 40,
+            "preco": 10.00
+        }
+    ]
+}
