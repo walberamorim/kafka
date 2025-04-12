@@ -4,11 +4,12 @@ import json
 
 def atender_pacientes():
     consumidor = KafkaConsumer(
-        'pacientes',
         bootstrap_servers=['localhost:9092'],
         api_version=(0, 10, 1),
         consumer_timeout_ms=5000,
         auto_offset_reset='earliest')
+    topico = TopicPartition('pacientes', 0)
+    consumidor.assign([topico])
     while True:
         contador = 0
         for atendimento in consumidor:
